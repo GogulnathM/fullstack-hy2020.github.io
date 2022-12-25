@@ -12,7 +12,6 @@ lang: en
 Let's keep expanding the backend. We want to implement support for allowing users with <i>admin status</i> to put users of their choice in disabled mode, preventing them from logging in and creating new notes. In order to implement this, we need to add boolean fields to the users' database table indicating whether the user is an admin and whether the user is disabled.
 
 We could proceed as before, i.e. change the model that defines the table and rely on Sequelize to synchronize the changes to the database. This is specified by these lines in the file <i>models/index.js</i>
-
 ```js
 const Note = require('./note')
 const User = require('./user')
